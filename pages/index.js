@@ -4,6 +4,7 @@ import Timer from '../components/timer';
 import React, { useState, useEffect } from 'react';
 import 'bulma/css/bulma.min.css';
 import { useRouter } from 'next/router';
+import DisqusComments from '../components/disqus';
 
 export default function Home() {
   const router = useRouter();
@@ -62,6 +63,9 @@ export default function Home() {
           <Link href="/trump">
             <button className="button is-primary is-outlined">트럼프</button>
           </Link>
+        </div>
+        <div className="chat">
+          <DisqusComments />
         </div>
       </main>
 
@@ -192,6 +196,10 @@ export default function Home() {
             width: 100%;
             flex-direction: column;
           }
+        }
+
+        .chat {
+          width: 100%;
         }
       `}</style>
 
