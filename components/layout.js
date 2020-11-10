@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Timer from '../components/timer';
 import 'bulma/css/bulma.min.css';
 import DisqusComments from '../components/disqus';
-import Button from '../components/button';
+import Buttons from '../components/button';
 import PropTypes from 'prop-types';
 
 export default function Layout(props) {
@@ -63,7 +63,7 @@ export default function Layout(props) {
         </h2>
 
         <div className="buttons">
-          <Button />
+          <Buttons />
         </div>
         <div className="chat">
           <DisqusComments />
@@ -71,7 +71,10 @@ export default function Layout(props) {
       </main>
 
       <footer>
-        <a>alus20x@gmail.com</a>
+        <a>
+          이 사이트는 어떠한 정치적 편향도 갖지 않으며, 민주주의에 대한 관심을
+          환기하기 위해 제작한 사이트입니다.
+        </a>
       </footer>
 
       <style jsx>{`

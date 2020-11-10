@@ -4,9 +4,8 @@ export default function Home() {
   const president = {
     name: '김정은 돼지',
     endDate: '2120-01-01',
-    imgSrc:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Kim_Jong-un_April_2019_%28cropped%29.jpg/250px-Kim_Jong-un_April_2019_%28cropped%29.jpg',
-    width: 250,
+    imgSrc: '../images/kim.png',
+    width: 300,
   };
 
   const message = {

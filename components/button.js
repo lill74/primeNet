@@ -1,12 +1,13 @@
 import Link from 'next/link';
 
-const Buttotns = (props) => {
+const Buttons = (props) => {
   const presidents = [
     ['문재인', '/'],
     ['김정은', '/kim-jung-eun'],
     ['트럼프', '/trump'],
     ['박근혜', '/park-geun-hae'],
-    ['아명박', '/lee-myung-bak'],
+    ['이명박', '/lee-myung-bak'],
+    ['바이든', '/biden'],
   ];
   let buttonList = [];
 
@@ -24,4 +25,4 @@ const Buttotns = (props) => {
   return <div>{buttonList}</div>;
 };
 
-export default Buttotns;
+export default Buttons;

@@ -4,9 +4,8 @@ export default function Home() {
   const president = {
     name: '박근혜 전 대통령',
     endDate: '2040-03-31',
-    imgSrc:
-      'https://monthly.chosun.com/up_fd/Mdaily/2020-07/bimg_thumb/%EB%B0%95%EA%B7%BC%ED%98%9C2.jpg',
-    width: 400,
+    imgSrc: '../images/park.png',
+    width: 300,
   };
 
   const message = {

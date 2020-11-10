@@ -4,9 +4,8 @@ export default function Home() {
   const president = {
     name: '문재인 대통령',
     endDate: '2022-05-09',
-    imgSrc:
-      'https://pds.joins.com//news/component/htmlphoto_mmdata/201801/07/d4fb3385-d595-4fcd-a3dc-fb7c3b473fdc.jpg',
-    width: 500,
+    imgSrc: '/images/moon.png',
+    width: 300,
   };
 
   const message = {

@@ -4,9 +4,8 @@ export default function Home() {
   const president = {
     name: '이명박 전 대통령',
     endDate: '2037-10-07',
-    imgSrc:
-      'https://upload.wikimedia.org/wikipedia/commons/e/e6/Lee_Myung-bak_2013-01-29.jpg',
-    width: 250,
+    imgSrc: '../images/lee.png',
+    width: 300,
   };
 
   const message = {
