@@ -16,13 +16,17 @@ export default function Layout(props) {
           rel="stylesheet"
         />
         <meta
+          name="description"
+          content="민주주의로 향하는 길 primeNet - 대통령 임기 보기"
+        />
+        <meta
           property="og:title"
           content={`${props.president.name} 남은 임기`}
           key="og:title"
         />
         <meta
           property="og:description"
-          content="민주주의로 향하는 길 primeNet"
+          content="민주주의로 향하는 길 primeNet - 대통령 임기 보기"
           key="og:description"
         />
         <meta
