@@ -15,7 +15,7 @@ export default function Layout(props) {
   return (
     <div className="container">
       <Head>
-        <title>primeNet - 프라임넷</title>
+        <title>primeNet - 프라임넷 (대통령 남은 임기 보기)</title>
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&display=swap"
