@@ -69,10 +69,10 @@ export default function Layout(props) {
         <div className="buttons">
           <Buttons />
         </div>
-        <div className="chat">
-          <DisqusComments />
-        </div>
       </main>
+      <div className="chat">
+        <DisqusComments />
+      </div>
 
       <footer>
         <a>
@@ -207,7 +207,7 @@ export default function Layout(props) {
         }
 
         .chat {
-          width: 100%;
+          width: 80%;
         }
       `}</style>
 
