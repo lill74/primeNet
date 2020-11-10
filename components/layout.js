@@ -19,10 +19,15 @@ export default function Layout(props) {
         />
         <meta
           property="og:title"
-          content={president + ' 남은 임기'}
-          key="title"
+          content={president.name + ' 남은 임기'}
+          key="og:title"
         />
-        <meta property="og:image" content="/moon.png" key="title" />
+        <meta
+          property="og:description"
+          content="민주주의로 향하는 길 primeNet"
+          key="og:description"
+        />
+        <meta property="og:image" content="/moon.png" key="og:image" />
       </Head>
 
       <main>
