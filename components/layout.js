@@ -4,6 +4,12 @@ import 'bulma/css/bulma.min.css';
 import DisqusComments from '../components/disqus';
 import Buttons from '../components/button';
 import PropTypes from 'prop-types';
+import {
+  FacebookShareButton,
+  FacebookMessengerShareButton,
+  TwitterShareButton,
+} from 'react-share';
+import { FacebookIcon, FacebookMessengerIcon, TwitterIcon } from 'react-share';
 
 export default function Layout(props) {
   return (
@@ -68,6 +74,26 @@ export default function Layout(props) {
 
         <div className="buttons">
           <Buttons />
+        </div>
+        <div>
+          <FacebookShareButton
+            url={props.message.url}
+            quote="대통령 남은 임기 보기"
+          >
+            <FacebookIcon size={42} round />
+          </FacebookShareButton>
+          <FacebookMessengerShareButton
+            url={props.message.url}
+            appId="393745795072444"
+          >
+            <FacebookMessengerIcon size={42} round />
+          </FacebookMessengerShareButton>
+          <TwitterShareButton
+            url={props.message.url}
+            title="대통령 남은 임기 보기"
+          >
+            <TwitterIcon size={42} round />
+          </TwitterShareButton>
         </div>
       </main>
       <div className="chat">
