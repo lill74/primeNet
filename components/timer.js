@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 const Timer = (props) => {
   const [nowDate, setNowDate] = useState();
@@ -11,7 +12,7 @@ const Timer = (props) => {
   var dDay = {};
   dDay.year = Math.floor(remainTime / (1000 * 60 * 60 * 24 * 30 * 12));
   dDay.month = Math.floor((remainTime / (1000 * 60 * 60 * 24 * 30)) % 12);
-  dDay.day = Math.floor((remainTime / (1000 * 60 * 60 * 24)) % 365);
+  dDay.day = Math.floor((remainTime / (1000 * 60 * 60 * 24)) % 30);
   dDay.hour = Math.floor((remainTime / (1000 * 60 * 60)) % 24);
   dDay.minute = Math.floor((remainTime / (1000 * 60)) % 60);
   dDay.second = Math.floor((remainTime / 1000) % 60);
@@ -29,9 +30,19 @@ const Timer = (props) => {
         {dDay.year} 년 {dDay.month} 월 {dDay.day} 일 {dDay.hour} 시간 <br></br>
         {dDay.minute} 분 {dDay.second} 초 {dDay.millisecond} 밀리초
       </h1>
-      <h2 className="description is-size-4">({props.endDate} 임기 만료)</h2>
+      <h2 className="description is-size-4">
+        ({props.endDate} {props.message})
+      </h2>
     </>
   );
+};
+
+Timer.propTypes = {
+  message: PropTypes.string,
+};
+
+Timer.defaultProps = {
+  message: '임기 만료',
 };
 
 export default Timer;
