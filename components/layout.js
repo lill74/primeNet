@@ -17,7 +17,7 @@ export default function Layout(props) {
         />
         <meta
           property="og:title"
-          content={props.president.name + ' 남은 임기'}
+          content={`${props.president.name} 남은 임기`}
           key="og:title"
         />
         <meta
@@ -31,6 +31,7 @@ export default function Layout(props) {
           key="og:image"
         />
         <meta property="og:url" content={props.message.url} key="og:url" />
+        <meta property="fb:app_id" content="393745795072444" key="fb:app_id" />
       </Head>
 
       <main>

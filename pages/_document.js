@@ -8,6 +8,32 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.fbAsyncInit = function() {
+                FB.init({
+                  appId      : '393745795072444',
+                  cookie     : true,
+                  xfbml      : true,
+                  version    : 'v8.0'
+                });
+                  
+                FB.AppEvents.logPageView();   
+                  
+              };
+            
+              (function(d, s, id){
+                 var js, fjs = d.getElementsByTagName(s)[0];
+                 if (d.getElementById(id)) {return;}
+                 js = d.createElement(s); js.id = id;
+                 js.src = "https://connect.facebook.net/en_US/sdk.js";
+                 fjs.parentNode.insertBefore(js, fjs);
+               }(document, 'script', 'facebook-jssdk'));
+          `,
+            }}
+          />
+
+          <script
             data-ad-client="ca-pub-7239496202657448"
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
