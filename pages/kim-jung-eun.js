@@ -19,6 +19,7 @@ export default function Home() {
         조선민주주의인민공화국의 원수이다. 사실상 뒤질때까지 영원한 수령이다.
       </p>,
     ],
+    url: 'https://chekly.co/kim-jung-eun',
   };
 
   return (

@@ -17,6 +17,7 @@ export default function Home() {
       <p>박근혜 전 대통령은 2017년 3월 31일에 구치소에 수감되기 시작했고</p>,
       <p>2020년 7월 10일 서울고법에서 징역 20년을 선고 받았다.</p>,
     ],
+    url: 'https://chekly.co/lee-myung-bak',
   };
 
   return (

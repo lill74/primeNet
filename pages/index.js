@@ -16,6 +16,7 @@ export default function Home() {
     card_content: [
       <p>대한민국에서 대통령의 임기는 5년이고 중임이 불가능 하다.</p>,
     ],
+    url: 'https://chekly.co/',
   };
 
   return (

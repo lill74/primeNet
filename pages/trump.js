@@ -14,6 +14,7 @@ export default function Home() {
     expiration_date_description: '임기 만료',
     card_title: '미국의 대통령의 임기',
     card_content: [<p>미국에서의 대통령의 임기는 4년 중임제이다.</p>],
+    url: 'https://chekly.co/trump',
   };
 
   return (

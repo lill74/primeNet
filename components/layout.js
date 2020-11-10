@@ -6,8 +6,6 @@ import Button from '../components/button';
 import PropTypes from 'prop-types';
 
 export default function Layout(props) {
-  const president = props.president;
-
   return (
     <div className="container">
       <Head>
@@ -19,7 +17,7 @@ export default function Layout(props) {
         />
         <meta
           property="og:title"
-          content={president.name + ' 남은 임기'}
+          content={props.president.name + ' 남은 임기'}
           key="og:title"
         />
         <meta
@@ -27,23 +25,28 @@ export default function Layout(props) {
           content="민주주의로 향하는 길 primeNet"
           key="og:description"
         />
-        <meta property="og:image" content="/moon.png" key="og:image" />
+        <meta
+          property="og:image"
+          content="https://chekly.co/moon.png"
+          key="og:image"
+        />
+        <meta property="og:url" content={props.message.url} key="og:url" />
       </Head>
 
       <main>
         <h1 className="title has-text-black">primeNet</h1>
         <h1 className="title has-text-black">프라임넷</h1>
         <h2 className="description has-text-black">
-          {president.name} {props.message.expiration_date_title}
+          {props.president.name} {props.message.expiration_date_title}
         </h2>
         <img
           className="mt-3"
-          src={president.imgSrc}
-          width={president.width}
+          src={props.president.imgSrc}
+          width={props.president.width}
         ></img>
 
         <Timer
-          endDate={president.endDate}
+          endDate={props.president.endDate}
           message={props.message.expiration_date_description}
         ></Timer>
 
