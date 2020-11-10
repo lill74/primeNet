@@ -6,6 +6,7 @@ const Buttotns = (props) => {
     ['김정은', '/kim-jung-eun'],
     ['트럼프', '/trump'],
     ['박근혜', '/park-geun-hae'],
+    ['아명박', '/lee-myung-bak'],
   ];
   let buttonList = [];
 
